@@ -1,0 +1,25 @@
+{
+  "name": "p2p-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start-signal": "node dist/signalServer.js",
+    "start-node": "node dist/node.js",
+    "dev-signal": "nodemon --watch src -e ts --exec \"ts-node src/signalServer.ts\"",
+    "dev-node": "nodemon --watch src -e ts --exec \"ts-node src/node.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.13",
+    "crypto": "^1.0.1",
+    "ws": "^8.18.0"
+  }
+}
